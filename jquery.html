@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="http://code.jquery.com/jquery.min.js"></script>
+  </head>
+  <body>
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="textInput"><br>
+    Hello <span id="nameField"></span>!
+
+    <script>
+      $('#textInput').on('keyup', function(){
+        $('#nameField').html($('#textInput').val());
+      });
+    </script>
+  </body>
+</html>
