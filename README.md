@@ -15,7 +15,7 @@ Here's how you might update that `<span>` in realtime with jQuery:
     Hello <span id="nameDiv"></span>!
 
     <script>
-      $('#textInput').on('keyup', function(){
+      $('#textInput').on('keyup', function() {
         $('#nameDiv').html($('#textInput').val());
       });
     </script>
@@ -63,7 +63,7 @@ Let's create a small example using a controller:
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></scriptst>
     <script>
       angular.module('stoogeApp', [])
-      .controller('StoogeController', function ($scope){
+      .controller('StoogeController', function($scope) {
         $scope.stooges = ['Larry', 'Curly', 'Moe'];
       });
     </script>
@@ -88,7 +88,7 @@ We can add an input to add more stooges:
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
     <script>
       angular.module('stoogeApp', [])
-      .controller('StoogeController', function ($scope){
+      .controller('StoogeController', function($scope) {
         $scope.stooges = ['Larry', 'Curly', 'Moe'];
         $scope.addStooge = function() {
           $scope.stooges.push($scope.stoogeName);

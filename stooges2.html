@@ -4,12 +4,12 @@
     <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular.min.js"></script>
     <script>
       angular.module('stoogeApp', [])
-        .controller('StoogeController', function($scope){
+        .controller('StoogeController', function($scope) {
           $scope.stooges = ['Larry', 'Curly', 'Moe', 'Shemp'];
           $scope.addStooge = function() {
             $scope.stooges.push($scope.stoogeName);
             $scope.stoogeName = '';
-          }
+          };
         });
     </script>
   </head>
